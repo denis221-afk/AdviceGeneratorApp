@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+
+:root{
+   --fontMain: "Manrope", sans-serif;
+    --colorDarkBlue: hsl(218, 23%, 16%); 
+    --colorMainBlue: hsl(217, 19%, 24%);
+    --colorLightBlue: hsl(217, 19%, 38%);
+    --colorGrean: hsl(150, 100%, 66%);
+    --colorBlue: hsl(193, 38%, 86%);
+
+}
+
+*{
+    box-sizing: border-box;
+ }
+
+ body{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontMain);
+    font-size: 28px;
+    background-color: var(--colorDarkBlue);
+    height: 100vh;
+    
+ }
+
+ .main-container{
+    max-width: 450px;
+    width: 100%;
+    min-height: 250px;
+    background-color: var(--colorMainBlue);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+ }
+
+ p{
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.5;
+ }
+ h1{
+  font-size: 14px;
+  color: var(--colorGrean);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+ }
+
+ button{
+  background-color: var(--colorGrean);
+  border: none;
+  border-radius: 50%;
+  padding: 18px;
+  position: absolute;
+  bottom: -25px; /* виступає за межі картки */
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ button:hover{
+      box-shadow: 0 0 20px var(--colorGreen);
+  }
+
+.divider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.divider img {
+  width: 100%;
+  max-width: 400px;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 22px;
+    padding: 20px;
+  }
+
+  .main-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .divider img {
+    max-width: 300px;
+  }
+
+  button {
+    padding: 15px;
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .divider img {
+    content: url("./src/icons/pattern-divider-mobile.svg");
+  }
+}
