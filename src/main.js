@@ -1,6 +1,6 @@
 const isCaunt = document.querySelector('#isCount'), 
-      isBtn = document.querySelector('#btn');
-      isContent = document.querySelector(`#content`);
+      isBtn = document.querySelector('#btn'),
+      isContent = document.querySelector('#content');
 
 function trigerCaunt() {
     let caunt = 0;
